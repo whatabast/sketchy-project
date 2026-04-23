@@ -21,3 +21,7 @@ div div {
     color: white;
     padding: 10%;
 }
+
+div div:hover {
+    background-color: yellow;
+}

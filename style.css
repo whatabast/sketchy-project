@@ -1,27 +1,19 @@
-* {
-    box-sizing: border-box;
-    border: 3px solid pink;
-    border-radius: 10px;
-}
 
-body {
+.main {
     display: flex;
 }
 
-div {
-    border: 5px solid orange;
-    background-color: blue;
-    display: grid;
-
+.main div {
+    border: 5px solid red;
     text-align: center;
 }
 
-div div {
+.main div div {
     background-color: black;
     color: white;
     padding: 10%;
 }
 
-div div:hover {
+.main div div:hover {
     background-color: yellow;
 }

@@ -8,11 +8,34 @@ body.append(main);
 
 // Create a nested for loop that can create an NxN box of any size
 let size = 16;
+// console.log("Below size", size);
+
+
+// Create a function that pops up a propmt for size input
+function boxSize()
+{
+    let bS = prompt("Input");
+    if(bS > 0 && bS <= 100)
+    {
+        console.log("Valid");
+        sizing(bS);
+        console.log(bS); 
+
+    }
+    else 
+    {
+        alert("Not Valid Size")
+    }
+}
 
 let wrapper = [];
 let box = [];
 
 function sizing(size){
+    wrapper = [];
+    box = [];
+    console.log(wrapper);
+
     for(let j=1; j<=size; j++)
     {
         wrapper[j] = document.createElement("div");
@@ -28,21 +51,5 @@ function sizing(size){
         }
     }
 }
-sizing(size);
 
 
-// Create a function that pops up a propmt for size input
-function boxSize()
-{
-    let size = prompt("Input");
-    if(size > 0 && size <= 100)
-    {
-        console.log("Valid");
-        sizing(size);
-
-    }
-    else 
-    {
-        alert("Not Valid Size")
-    }
-}

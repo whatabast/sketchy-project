@@ -52,7 +52,7 @@ function sizing(size){
             box[i] = document.createElement("div");
             box[i].className = "box" + i;
             wrapper[j].append(box[i]);
-            box[i].textContent = "box" + i;
+            box[i].textContent = i;
         }
     }
 }

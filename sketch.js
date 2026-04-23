@@ -1,18 +1,29 @@
 const body = document.body;
-// const wrapper = document.createElement("div");
-// wrapper.className="wrapper";
-// body.append(wrapper);
+const main = document.createElement("div");
+main.className="main";
+body.append(main);
+
+function resize(newSize)
+{
+
+}
+
+buttonSize = document.createElement("button");
+body.append(buttonSize);
+buttonSize.textContent = "Create New Grid";
+
+let size = 16; //prompt("How big do you want the grid?");
 
 let wrapper = [];
 let box = [];
 
-for(let j=1; j<=16; j++)
+for(let j=1; j<=size; j++)
 {
     wrapper[j] = document.createElement("div");
-    body.className="wrapper"+j;
-    body.append(wrapper[j]);
+    wrapper[j].className="wrapper"+j;
+    main.append(wrapper[j]);
 
-    for(let i=1; i<=16; i++)
+    for(let i=1; i<=size; i++)
     {
         box[i] = document.createElement("div");
         box[i].className = "box" + i;

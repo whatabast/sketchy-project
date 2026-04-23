@@ -1,5 +1,6 @@
 body {
     background-color: tan;
+    text-align: center;
 }
 
 
@@ -9,18 +10,18 @@ body {
 }
 
 .main div {
-    /* border: 5px solid red; */
     text-align: center;
 }
 
 .main div div {
     background-color: black;
-    color: tan;
-    padding: 10%;
+    color: black;
+    flex: 0 1 auto;
 }
 
 .main div div:hover {
     background-color: tan;
+    color: tan;
 }
 
 input {

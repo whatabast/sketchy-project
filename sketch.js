@@ -14,7 +14,7 @@ let size = 16;
 // Create a function that pops up a propmt for size input
 function boxSize()
 {
-    let bS = prompt("Input");
+    let bS = prompt("How big would you like the grid?");
     if(bS > 0 && bS <= 100)
     {
         for(i=1; i<wrapper.length;i++)
@@ -44,15 +44,15 @@ function sizing(size){
     for(let j=1; j<=size; j++)
     {
         wrapper[j] = document.createElement("div");
-        wrapper[j].className="wrapper"+j;
+        wrapper[j].className="wrapper";
         main.append(wrapper[j]);
 
         for(let i=1; i<=size; i++)
         {
             box[i] = document.createElement("div");
-            box[i].className = "box" + i;
+            box[i].className = "box";
             wrapper[j].append(box[i]);
-            box[i].textContent = i;
+            // box[i].textContent = i;
         }
     }
 }

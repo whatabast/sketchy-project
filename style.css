@@ -1,25 +1,33 @@
 body {
     background-color: tan;
-    text-align: center;
 }
 
 
 .main {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 400px;
+    /* background-color: purple; */
 }
 
-.main div {
+.main .wrapper {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 400px;
 }
 
-.main div div {
+.box {
     background-color: black;
     color: black;
-    flex: 0 1 auto;
+    border: 1px solid green;
+    flex: 1;
+
 }
 
-.main div div:hover {
+.box:hover {
     background-color: tan;
     color: tan;
 }

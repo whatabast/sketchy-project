@@ -17,3 +17,9 @@
 .main div div:hover {
     background-color: yellow;
 }
+
+input {
+    width: 25%;
+    font-size: 24px;
+    font-weight: 700;
+}

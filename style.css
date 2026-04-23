@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    border: 3px solid pink;
+    border-radius: 10px;
+}
+
+body {
+    display: flex;
+}
+
+div {
+    border: 5px solid orange;
+    background-color: blue;
+    display: grid;
+
+    text-align: center;
+}
+
+div div {
+    background-color: black;
+    color: white;
+    padding: 10%;
+}

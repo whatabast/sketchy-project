@@ -17,9 +17,13 @@ function boxSize()
     let bS = prompt("Input");
     if(bS > 0 && bS <= 100)
     {
+        for(i=1; i<wrapper.length;i++)
+        {
+            wrapper[i].remove();
+        }
         console.log("Valid");
         sizing(bS);
-        console.log(bS); 
+        // console.log(bS); 
 
     }
     else 
@@ -28,12 +32,13 @@ function boxSize()
     }
 }
 
+
 let wrapper = [];
 let box = [];
 
 function sizing(size){
-    wrapper = [];
-    box = [];
+    // let wrapper = [];
+    // let box = [];
     console.log(wrapper);
 
     for(let j=1; j<=size; j++)
@@ -51,5 +56,5 @@ function sizing(size){
         }
     }
 }
-
+sizing(size);
 
